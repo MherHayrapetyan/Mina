@@ -1,0 +1,32 @@
+/* Header Media */
+
+@media only screen and (max-width: 920px) {
+  .burgBox {
+    display: block;
+  }
+
+  .logoBox {
+    margin-left: 15px;
+  }
+
+  .navigationOneBoxOne {
+    display: none;
+  }
+
+  .navigationOne {
+    justify-content: flex-end;
+    padding-right: 5px;
+  }
+
+  .logoBox {
+    margin-right: 15px;
+  }
+
+  .navigationOneShopBox {
+    width: 100%;
+  }
+
+  .navigationOneShop {
+    margin-left: 0;
+  }
+}
