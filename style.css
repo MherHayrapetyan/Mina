@@ -215,3 +215,85 @@ header {
   height: auto;
   opacity: 1;
 }
+
+/* Main */
+
+.oneTextBlock {
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+  background-color: rgb(76, 31, 89);
+  color: white;
+  padding: 20px 20px;
+}
+
+.oneTextBlock p {
+  animation-name: animTop;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  transform: translateY(15px);
+  opacity: 0;
+}
+
+/* Section One */
+
+.sectionOne{
+  width: 100%;
+  background-image: url(img/imgOne.avif);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 170px 90px;
+}
+
+.sectionOneBox {
+  text-align: center;
+  animation-name: animTop;
+  animation-duration: .7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  transform: translateY(15px);
+  opacity: 0;
+}
+
+.sectionOneBox h1 {
+  color: white;
+  font-size: 5em;
+}
+
+.sectionOneBox p {
+  color: white;
+  font-size: 1.3em;
+  margin-top: 5px;
+}
+
+.sectionOneBox button {
+  width: 170px;
+  height: 60px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: rgb(76, 31, 89);
+  font-size: 1.1em;
+}
+
+@keyframes animTop {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Section Two */
+
