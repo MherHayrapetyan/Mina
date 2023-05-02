@@ -54,3 +54,28 @@
 }
 
 /* Section Two */
+
+@media only screen and (max-width: 1038px) {
+  .sectionTwoBox {
+    padding: 0 10px;
+  }
+  .sectionTwoMiniBox {
+    width: 45%;
+  }
+  .sectionTwoMiniBoxImg {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .sectionTwoMiniBox {
+    width: 100%;
+    margin-left: 0;
+  }
+  .sectionTwoBox {
+    padding: 0 10px;
+  }
+  .sectionTwoTxt {
+    font-size: 2.5em;
+  }
+}

@@ -6,7 +6,6 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  height: 3000px;
 }
 
 /* Header */
@@ -45,7 +44,6 @@ header {
   font-weight: bold;
   font-size: 1.6em;
   margin-left: 80px;
-  /* margin-left: 0; */
 }
 
 .navigationOne {
@@ -96,6 +94,7 @@ header {
   -webkit-box-shadow: 0px 0px 10px -4px #000000;
   box-shadow: 0px 0px 10px -4px #000000;
   border-radius: 10px;
+  background-color: white;
 }
 
 .navigationOneBoxOneHover li {
@@ -229,7 +228,7 @@ header {
 
 .oneTextBlock p {
   animation-name: animTop;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
   transform: translateY(15px);
@@ -238,13 +237,13 @@ header {
 
 /* Section One */
 
-.sectionOne{
+.sectionOne {
   width: 100%;
   background-image: url(img/imgOne.avif);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,7 +253,7 @@ header {
 .sectionOneBox {
   text-align: center;
   animation-name: animTop;
-  animation-duration: .7s;
+  animation-duration: 0.7s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
   transform: translateY(15px);
@@ -284,6 +283,77 @@ header {
   font-size: 1.1em;
 }
 
+/* Section Two */
+
+.sectionTwoTxt {
+  width: 100%;
+  padding: 70px 0;
+  font-size: 3em;
+  text-align: center;
+  font-weight: bold;
+  animation-name: animTop;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  transform: translateY(15px);
+  opacity: 0;
+  display: none;
+}
+
+.sectionTwoBox {
+  width: 100%;
+  padding: 0 40px;
+  text-align: center;
+  animation-name: animTop;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  transform: translateY(15px);
+  opacity: 0;
+  display: none;
+}
+
+.sectionTwoMiniBox {
+  display: inline-block;
+  width: 290px;
+  margin-left: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.sectionTwoMiniBox:hover .sectionTwoMiniBoxImg img {
+  filter: grayscale(50%);
+  transform: scale(1.3);
+}
+
+.sectionTwoMiniBoxImg {
+  width: 100%;
+  height: 270px;
+  background-color: aliceblue;
+  overflow: hidden;
+}
+
+.sectionTwoMiniBoxTxtTitle {
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+  margin-top: 15px;
+}
+
+.sectionTwoMiniBoxTxtPrice {
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sectionTwoMiniBoxImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.7s;
+}
+
 @keyframes animTop {
   0% {
     opacity: 0;
@@ -295,5 +365,19 @@ header {
   }
 }
 
-/* Section Two */
+/* Section Three */
 
+.sectionThree {
+  margin-top: 70px;
+  background-image: url(img/imgTwo.avif);
+}
+
+.sectionThreeAnim {
+  animation-name: animTop;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  transform: translateY(15px);
+  opacity: 0;
+  display: none;
+}
