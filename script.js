@@ -52,3 +52,24 @@ addEventListener("scroll", () => {
     sectionThreeAnimTop.style.display = "none";
   }
 });
+
+// Section Four
+
+const sectionFourImg = document.querySelectorAll(".sectionFourBoxImg");
+const sectionFourImgTop = document.querySelector(".sectionFourBoxImgTop");
+const sectionFourTxt = document.querySelectorAll(".sectionFourBoxTxt");
+const sectionFourTxtTop = document.querySelector(".sectionFourBoxTxtTop");
+
+addEventListener("scroll", () => {
+  if (window.pageYOffset > sectionFourImgTop.offsetTop - 550) {
+    sectionFourImg.forEach(item=> item.style.display = "block")
+    sectionFourImgTop.style.display = "none";
+  }
+});
+
+addEventListener("scroll", () => {
+  if (window.pageYOffset > sectionFourTxtTop.offsetTop - 570) {
+    sectionFourTxt.forEach(item=> item.style.display = "block")
+    sectionFourTxtTop.style.display = "none";
+  }
+});

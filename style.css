@@ -354,17 +354,6 @@ header {
   transition: 0.7s;
 }
 
-@keyframes animTop {
-  0% {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 /* Section Three */
 
 .sectionThree {
@@ -380,4 +369,80 @@ header {
   transform: translateY(15px);
   opacity: 0;
   display: none;
+}
+
+/* Section Four */
+
+.sectionFour {
+  margin-top: 100px;
+  padding: 0 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionFourBox {
+  width: 49%;
+}
+
+.sectionFourBoxImg {
+  width: 100%;
+  height: 350px;
+  animation-name: animTop;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  transform: translateY(15px);
+  opacity: 0;
+  display: none;
+}
+
+.sectionFourBoxImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sectionFourBoxTxt {
+  width: 100%;
+  padding: 40px 0;
+  animation-name: animTop;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  transform: translateY(15px);
+  opacity: 0;
+  display: none;
+}
+
+.sectionFourBoxTxt h3 {
+  font-size: 1.9em;
+}
+
+.sectionFourBoxTxt p {
+  margin-top: 20px;
+  color: rgb(100, 100, 100);
+  font-size: 1.2em;
+}
+
+.sectionFourBoxTxt button {
+  width: 170px;
+  height: 60px;
+  background-color: rgb(76, 31, 89);
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.1em;
+}
+
+@keyframes animTop {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

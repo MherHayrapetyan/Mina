@@ -79,3 +79,33 @@
     font-size: 2.5em;
   }
 }
+
+/* Section Three */
+
+@media only screen and (max-width: 1200px) {
+  .sectionFour {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .sectionFour {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionFourBox {
+    width: 400px;
+  }
+  .sectionFourBoxTxt {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .sectionFourBox {
+    width: 270px;
+  }
+  .sectionFourBoxImg {
+    height: 300px;
+  }
+}
