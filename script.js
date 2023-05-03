@@ -74,7 +74,7 @@ addEventListener("scroll", () => {
   }
 });
 
-// Section Three
+// Section Five
 
 const sectionFiveAnim = document.querySelector(".sectionFiveAnim");
 const sectionFiveAnimTop = document.querySelector(".sectionFiveAnimTop");
@@ -96,4 +96,25 @@ emailBtt.onclick = ()=> {
     secionFiveBlock.style.display = "block"
   }
 }
+
+// Section Six
+
+const sectionSixBox = document.querySelector(".sectionSixBox");
+const sectionSixBoxTop = document.querySelector(".sectionSixBoxTop");
+const sectionSixBtt = document.querySelector(".sectionSixBtt");
+const sectionSixBttTop = document.querySelector(".sectionSixBttTop");
+
+addEventListener("scroll", () => {
+  if (window.pageYOffset > sectionSixBoxTop.offsetTop - 550) {
+    sectionSixBox.style.display = "flex";
+    sectionSixBoxTop.style.display = "none";
+  }
+});
+
+addEventListener("scroll", () => {
+  if (window.pageYOffset > sectionSixBttTop.offsetTop - 600) {
+    sectionSixBtt.style.display = "block";
+    sectionSixBttTop.style.display = "none";
+  }
+});
 
