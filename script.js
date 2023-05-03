@@ -62,14 +62,14 @@ const sectionFourTxtTop = document.querySelector(".sectionFourBoxTxtTop");
 
 addEventListener("scroll", () => {
   if (window.pageYOffset > sectionFourImgTop.offsetTop - 550) {
-    sectionFourImg.forEach(item=> item.style.display = "block")
+    sectionFourImg.forEach((item) => (item.style.display = "block"));
     sectionFourImgTop.style.display = "none";
   }
 });
 
 addEventListener("scroll", () => {
   if (window.pageYOffset > sectionFourTxtTop.offsetTop - 570) {
-    sectionFourTxt.forEach(item=> item.style.display = "block")
+    sectionFourTxt.forEach((item) => (item.style.display = "block"));
     sectionFourTxtTop.style.display = "none";
   }
 });
@@ -78,10 +78,10 @@ addEventListener("scroll", () => {
 
 const sectionFiveAnim = document.querySelector(".sectionFiveAnim");
 const sectionFiveAnimTop = document.querySelector(".sectionFiveAnimTop");
-const emailInput = document.querySelector("#emailInput")
-const emailBtt = document.querySelector("#emailBtt")
-const sectionFiveNone = document.querySelectorAll(".secionFiveNone")
-const secionFiveBlock = document.querySelector(".secionFiveBlock")
+const emailInput = document.querySelector("#emailInput");
+const emailBtt = document.querySelector("#emailBtt");
+const sectionFiveNone = document.querySelectorAll(".secionFiveNone");
+const secionFiveBlock = document.querySelector(".secionFiveBlock");
 
 addEventListener("scroll", () => {
   if (window.pageYOffset > sectionFiveAnimTop.offsetTop - 500) {
@@ -90,12 +90,12 @@ addEventListener("scroll", () => {
   }
 });
 
-emailBtt.onclick = ()=> {
-  if(emailInput.value.search(/@./) !== -1) {
-    sectionFiveNone.forEach(item=> item.style.display = "none")
-    secionFiveBlock.style.display = "block"
+emailBtt.onclick = () => {
+  if (emailInput.value.search(/@./) !== -1) {
+    sectionFiveNone.forEach((item) => (item.style.display = "none"));
+    secionFiveBlock.style.display = "block";
   }
-}
+};
 
 // Section Six
 
@@ -118,3 +118,16 @@ addEventListener("scroll", () => {
   }
 });
 
+// Footer
+
+const footerBoxOne = document.querySelector(".footerBox");
+const footerBoxTwo = document.querySelector(".footerBoxTwo");
+const footerBoxTop = document.querySelector(".footerBoxTop");
+
+addEventListener("scroll", () => {
+  if (window.pageYOffset > footerBoxTop.offsetTop - 650) {
+    footerBoxOne.style.display = "block";
+    footerBoxTwo.style.display = "block";
+    footerBoxTop.style.display = "none";
+  }
+});
