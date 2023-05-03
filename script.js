@@ -73,3 +73,27 @@ addEventListener("scroll", () => {
     sectionFourTxtTop.style.display = "none";
   }
 });
+
+// Section Three
+
+const sectionFiveAnim = document.querySelector(".sectionFiveAnim");
+const sectionFiveAnimTop = document.querySelector(".sectionFiveAnimTop");
+const emailInput = document.querySelector("#emailInput")
+const emailBtt = document.querySelector("#emailBtt")
+const sectionFiveNone = document.querySelectorAll(".secionFiveNone")
+const secionFiveBlock = document.querySelector(".secionFiveBlock")
+
+addEventListener("scroll", () => {
+  if (window.pageYOffset > sectionFiveAnimTop.offsetTop - 500) {
+    sectionFiveAnim.style.display = "block";
+    sectionFiveAnimTop.style.display = "none";
+  }
+});
+
+emailBtt.onclick = ()=> {
+  if(emailInput.value.search(/@./) !== -1) {
+    sectionFiveNone.forEach(item=> item.style.display = "none")
+    secionFiveBlock.style.display = "block"
+  }
+}
+

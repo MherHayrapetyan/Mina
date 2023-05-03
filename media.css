@@ -80,7 +80,7 @@
   }
 }
 
-/* Section Three */
+/* Section Four */
 
 @media only screen and (max-width: 1200px) {
   .sectionFour {
@@ -107,5 +107,13 @@
   }
   .sectionFourBoxImg {
     height: 300px;
+  }
+}
+
+/* Section Five */
+
+@media only screen and (max-width: 450px) {
+  .sectionFive form {
+    width: 100%;
   }
 }

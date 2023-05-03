@@ -184,6 +184,7 @@ header {
   align-items: flex-end;
   list-style: none;
   padding: 0 20px 20px;
+  background-color: white;
 }
 
 .burgLogoBox ul li {
@@ -436,6 +437,52 @@ header {
   font-size: 1.1em;
 }
 
+/* Section Five */
+
+.sectionFiveAnim {
+  display: none;
+}
+
+.sectionFive {
+  padding: 170px 70px;
+  margin-top: 70px;
+  background-image: url(img/imgFive.avif);
+}
+
+.sectionFive form {
+  margin-top: 20px;
+  width: 440px;
+  margin: auto;
+  text-align: left;
+  padding: 20px 20px 0;
+}
+
+.sectionFive label {
+  color: white;
+  font-size: 1.1em;
+  display: block;
+}
+
+
+.sectionFive input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding: 0 10px;
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+
+.secionFiveBlock {
+  display: none;
+  animation-name: animTop;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  transform: translateY(15px);
+  opacity: 0;
+}
+
 @keyframes animTop {
   0% {
     opacity: 0;
@@ -446,3 +493,4 @@ header {
     transform: translateX(0);
   }
 }
+
